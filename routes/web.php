@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\CartController;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,6 +35,9 @@ Route::put('/products/{product}', [ProductController::class, 'update'])->name('p
 Route::delete('/products/{product}', [ProductController::class, 'destroy'])->name('products.destroy');
 Route::get('/' , [UserController::class, 'index'])->name('user.index');
 Route::get('/products/{product}', [UserController::class, 'show'])->name('products.show');
+Route::post('/cart/add/{product}', [CartController::class, 'add'])->name('cart.add');
+Route::get('/cart', [CartController::class, 'index'])->name('user.cart');
+
 
 
 
