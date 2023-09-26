@@ -1,14 +1,27 @@
-@include('partials.header')
-@include('partials.user-navbar')
+@extends('Layout.master') <!-- Extend the master layout -->
 
-<div class="container mt-5">
+@section('title', 'User Index') <!-- Set the page title -->
+
+@section('style')
+    <!-- Include your custom styles here -->
+    <link href="/styles/nav.css" rel="stylesheet">
+    <link href="/styles/user-index.css" rel="stylesheet">
+    <link href="/styles/banner.css" rel="stylesheet">
+    <link href="/styles/flashmsg.css" rel="stylesheet">
+    
+@endsection
+
+@section('content')
+    
+   
+
     @if (session('success'))
         <div class="alert alert-success">
             {{ session('success') }}
         </div>
     @endif
 
-    <div class="row">
+    <div class="row mt-5">
         @foreach($products as $index => $product)
             <div class="col-md-3">
                 <div class="card">
@@ -32,6 +45,7 @@
             @endif
         @endforeach
     </div>
-</div>
 
-@include('partials.footer')
+   
+
+@endsection

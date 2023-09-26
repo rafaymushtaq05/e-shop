@@ -10,9 +10,11 @@
         <a class="nav-link" href="/admin">Home</a>
       </li>
 
-      <li class="nav-item active">
-        <a class="nav-link" href="addproduct">Add Products</a>
+      <li class="nav-item">
+        <a class="nav-link" href="addproduct">Add Product</a>
       </li>
+
       
+    </ul>
   </div>
 </nav>

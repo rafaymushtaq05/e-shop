@@ -1,0 +1,71 @@
+
+.product-page {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa; /* A light background color */
+}
+
+
+
+
+.partials-banner {
+    margin-bottom: 20px; /* Provide some space under the banner */
+}
+
+/* Success alert message */
+.alert-success {
+    border: 1px solid #28a745;
+    background-color: #d4edda;
+    color: #155724;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* Product card styling */
+.card {
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 5px;
+    transition: transform 0.2s; /* Animation */
+}
+
+.card:hover {
+    transform: scale(1.03); /* Slight zoom on hover */
+}
+
+.card-img-top {
+    max-height: auto; /* Limit height */
+    object-fit: cover; /* Make sure images are scaled correctly */
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card-body {
+    padding: 10px;
+}
+
+.card-title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1.1em;
+    color: #555; /* Dark grey color */
+    margin-bottom: 10px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 8px 15px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darken on hover */
+}

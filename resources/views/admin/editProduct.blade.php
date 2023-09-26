@@ -1,5 +1,17 @@
-@include('partials.header')
-@include('partials.admin-navbar')
+@extends('Layout.admin-master')
+
+@section('title', 'Edit Product')
+
+@section('style')
+    <!-- Any additional styles you might want to add for this specific page -->
+    <link href="/styles/form.css" rel="stylesheet">
+    
+    <link href="/styles/nav.css" rel="stylesheet">
+    <link href="/styles/banner.css" rel="stylesheet">
+
+@endsection
+
+@section('content')
 
 <div class="container mt-5">
     <h2 class="mb-4">Edit Product</h2>
@@ -37,4 +49,6 @@
     </form>
 </div>
 
-@include('partials.footer')
+@endsection
+
+

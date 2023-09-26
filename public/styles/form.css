@@ -1,0 +1,47 @@
+.container.mt-5 {
+    background-color: #f8f9fa;  /* Light grey background to differentiate form from background */
+    padding: 30px;  /* Additional padding for aesthetic spacing */
+    border-radius: 10px; /* Soft round edges */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* A subtle shadow for depth */
+}
+
+h2.mb-4 {
+    font-weight: bold; /* Making the title bold */
+    color: #333; /* A dark shade for the title */
+    border-bottom: 2px solid #007BFF; /* Underline effect */
+    padding-bottom: 10px; /* Spacing from the underline */
+}
+
+.form-group {
+    margin-bottom: 25px; /* Spacing between form groups */
+}
+
+label {
+    font-weight: 500; /* Slightly bolder text for labels */
+    color: #444; /* Dark grey color for labels */
+    margin-bottom: 10px; /* Spacing between label and input field */
+    display: block; /* To force new line */
+}
+
+.form-control {
+    border: 1px solid #aaa; /* Slightly darker border color */
+    border-radius: 5px; /* Soft round edges on inputs */
+    padding: 12px 15px; /* Slightly larger padding */
+    font-size: 1em; /* Uniform font size */
+}
+
+.form-control:focus {
+    border-color: #007BFF; /* Blue border on focus */
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25); /* Blue shade for the focus effect */
+}
+
+.btn-primary {
+    padding: 10px 20px; /* Larger padding for a bigger button */
+    font-size: 1.1em; /* Slightly larger font */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* A subtle shadow for depth */
+}
+
+.btn-primary:hover, 
+.btn-primary:focus {
+    background-color: #0056b3; /* Slightly darker shade on hover/focus */
+}

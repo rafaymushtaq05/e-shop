@@ -1,0 +1,53 @@
+/* General Navbar Styles */
+.navbar {
+    font-family: 'Arial', sans-serif; /* Choose a more "admin-like" font */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+}
+
+.navbar-brand {
+    font-weight: bold; /* Make the brand bold */
+    letter-spacing: 1px; /* Increase spacing between letters for a refined look */
+    color: #333; /* Dark color for brand */
+    transition: color 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+.navbar-brand:hover {
+    color: #007BFF; /* Change color on hover */
+}
+
+.navbar-toggler {
+    border-color: #ddd; /* Lighter color for the toggler */
+}
+
+.navbar-toggler-icon {
+    background-color: #888; /* Medium gray for the toggler icon */
+}
+
+/* Navbar Items */
+.nav-item {
+    margin: 0 10px; /* Spacing between items */
+}
+
+.nav-link {
+    color: #555; /* Dark gray for non-active links */
+    transition: color 0.3s ease-in-out; /* Smooth transition for hover effects */
+    padding: 10px 15px; /* A bit more padding for a larger click/tap area */
+    border-radius: 5px; /* Rounded corners for hover background effect */
+}
+
+.nav-link:hover, 
+.nav-item.active .nav-link {
+    color: #007BFF; /* Primary color for hovered and active links */
+    background-color: #f5f5f5; /* Light gray background on hover */
+}
+
+/* For larger screens, you might want to make the navbar items bigger or more spaced out */
+@media (min-width: 992px) {
+    .nav-item {
+        margin: 0 15px; /* More spacing between items */
+    }
+
+    .nav-link {
+        font-size: 1.1em; /* Larger font size */
+    }
+}

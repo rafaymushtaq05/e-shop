@@ -1,7 +1,17 @@
+@extends('Layout.admin-master')
 
-@include('partials.header')
-@include('partials.admin-navbar')
+@section('title', 'Add Product')
 
+@section('style')
+    <!-- Any additional styles you might want to add for this specific page -->
+    <link href="/styles/form.css" rel="stylesheet">
+    
+    <link href="/styles/nav.css" rel="stylesheet">
+    <link href="/styles/banner.css" rel="stylesheet">
+
+@endsection
+
+@section('content')
 <div class="container mt-5">
         <h2 class="mb-4">Product Form</h2>
         <form method="post" action="{{route('products.store')}}">
@@ -37,4 +47,5 @@
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
     </div>
-@include('partials.footer')
+
+@endsection

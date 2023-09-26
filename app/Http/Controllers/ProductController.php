@@ -11,7 +11,11 @@ class ProductController extends Controller
     public function index()
     {
         $products = Product::all();
-        return view('admin.index', ['products' => $products]);
+        return view('admin.index', ['products' => $products, 'heading' => 'Welcome To Admin Panel']);
+    }
+
+    function addProduct(){
+        return view('admin.addproduct', ['heading' => 'Add Product']);
     }
 
    
@@ -20,7 +24,7 @@ class ProductController extends Controller
     public function edit($id)
     {
         $product = Product::findOrFail($id);
-        return view('admin.editProduct', ['product' => $product]);
+        return view('admin.editProduct', ['product' => $product, 'heading' => 'Edit Product']);
     }
     
 

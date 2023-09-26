@@ -1,0 +1,43 @@
+.container {
+    font-family: Arial, sans-serif; /* Optional: Define a clean font family */
+    padding: 40px; /* Added more padding for spacious layout */
+    background-color: #f8f9fa; /* A light grey background to differentiate the cart from the surroundings */
+    border-radius: 10px; /* Rounded edges for a modern look */
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow to provide depth */
+}
+
+h2 {
+    margin-bottom: 30px; /* More space between the title and the table */
+    font-weight: bold;
+    font-size: 24px; /* Larger font size for prominence */
+    color: #333;
+    border-bottom: 2px solid #007BFF; /* Blue underline to match the theme */
+    padding-bottom: 10px;
+}
+
+.table {
+    background-color: #fff; /* White background for the table */
+    border-radius: 8px; /* Rounded edges for the table */
+    overflow: hidden; /* Ensures the rounded corners for tables (especially for shadows) */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for the table */
+}
+
+.table th, .table td {
+    vertical-align: middle; /* Align content to the middle for aesthetics */
+    padding: 15px; /* More spacious cells */
+}
+
+.table th {
+    background-color: #007BFF; /* Blue background for headers */
+    color: white; /* White text for headers */
+    font-weight: 600; /* Slightly bolder text for headers */
+}
+
+.table td {
+    color: #555; /* Dark grey text for better readability */
+}
+
+/* Hover effect for rows */
+.table tbody tr:hover {
+    background-color: #eef4ff; /* Light blue background on hover */
+}

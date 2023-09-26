@@ -26,10 +26,24 @@ class CartController extends Controller
 
 public function index()
 {
-    // Fetch all cart items for simplicity. In real-world scenarios, you'd fetch only items associated with a particular user or session.
-    $cartItems = Cart::all();
-    return view('user.cart', compact('cartItems'));
+    
+    // $cartItems = Cart::all();
+    // $heading = 'Cart';
+ 
+    // return view('user.cart', compact('cartItems', 'heading'));
+
+    $cartItems = Cart::with('product')->get();
+
+    // If you want to access the product's name and price for a specific cart item, you'd do something like this:
+    // $productName = $cartItems[0]->product->name;
+    // $productPrice = $cartItems[0]->product->price;
+
+    $heading = 'Cart';
+
+    return view('user.cart', compact('cartItems', 'heading'));
 }
+
+
 
 
 }

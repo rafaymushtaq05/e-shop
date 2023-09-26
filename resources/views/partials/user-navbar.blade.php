@@ -10,13 +10,13 @@
         <a class="nav-link" href="/">Home</a>
       </li>
 
-      <li class="nav-item active">
+      <li class="nav-item">
         <a class="nav-link" href="/cart">Cart</a>
       </li>
 
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Orders</a>
+      <li class="nav-item">
+        <a class="nav-link" href="order">Orders</a>
       </li>
-      
+    </ul>
   </div>
 </nav>
