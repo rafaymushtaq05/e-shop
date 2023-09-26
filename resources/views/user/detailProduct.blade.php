@@ -3,7 +3,7 @@
 @section('title', 'Detail Product') <!-- Set the page title -->
 
 @section('style')
-    <!-- Include your custom styles here -->
+    
     <link href="/styles/user-nav.css" rel="stylesheet">
     <link href="/styles/banner.css" rel="stylesheet">
     <link href="/styles/detail.css" rel="stylesheet">
@@ -20,9 +20,13 @@
         <div class="col-lg-6">
             <!-- Product Details -->
             <h2 class="product-name">{{ $product->name }}</h2>
-            <p class="product-price">${{ $product->price }}</p>
+            <p class="product-price">Rs {{ $product->price }}</p>
             <p class="product-description">{{ $product->description }}</p>
-            <button class="btn btn-primary">Add to Cart</button>
+            
+            <form action="{{ route('cart.add', $product->id) }}" method="POST">
+                            @csrf
+                            <button type="submit" class="btn btn-primary">Add to Cart</button>
+                        </form>
         </div>
     </div>
 </div>

@@ -1,6 +1,6 @@
 @extends('Layout.master') <!-- Extend the master layout -->
 
-@section('title', 'User Index') <!-- Set the page title -->
+@section('title', 'Home') <!-- Set the page title -->
 
 @section('style')
     <!-- Include your custom styles here -->

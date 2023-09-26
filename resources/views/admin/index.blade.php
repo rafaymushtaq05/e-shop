@@ -16,7 +16,7 @@
 @section('content')
     @include('partials.flashmsg')
 
-    <div class="container mt-5">
+    <div class="container mt-2">
         <div class="row">
             @foreach($products as $index => $product)
                 <div class="col-md-3">

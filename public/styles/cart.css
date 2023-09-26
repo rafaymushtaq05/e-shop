@@ -41,3 +41,17 @@ h2 {
 .table tbody tr:hover {
     background-color: #eef4ff; /* Light blue background on hover */
 }
+
+.btn-order-now {
+    background-color: #007BFF;
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px 2px; /* Added a bit more margin for spacing below the table */
+    cursor: pointer;
+    border-radius: 8px;
+}

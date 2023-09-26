@@ -1,6 +1,6 @@
 @extends('Layout.master') <!-- Extend the master layout -->
 
-@section('title', 'Cart') <!-- Set the page title -->
+@section('title', 'Order') <!-- Set the page title -->
 
 @section('style')
     <!-- Include your custom styles here -->
@@ -13,6 +13,7 @@
 @section('content')
 @include('partials.flashmsg')
 
+<div class="containers">
 <form method="post" action="{{ route('store') }}">
     @csrf
     <div class="form-group">
@@ -34,12 +35,14 @@
         <label for="payment_method">Payment Method:</label>
         <select class="form-control" id="payment_method" name="payment_method" required>
             <option value="credit_card">Credit Card</option>
-            <option value="paypal">PayPal</option>
+           
             <option value="cash_on_delivery">Cash on Delivery</option>
         </select>
     </div>
 
     <button type="submit" class="btn btn-primary">Place Order</button>
 </form>
+
+</div>
 
 @endsection

@@ -13,7 +13,7 @@
 
 /* Styles for the quote/heading */
 .quote {
-    font-family: 'Arizonia', cursive; /* Using the custom font you linked earlier */
+    font-family: 'Arizonia'; /* Using the custom font you linked earlier */
     color: #333; /* Dark text color */
     border-radius: 5px; /* Slight rounding on the corners */
     box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1); /* Shadow to make it pop a bit */

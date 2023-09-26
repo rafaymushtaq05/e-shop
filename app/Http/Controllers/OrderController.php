@@ -18,7 +18,7 @@ class OrderController extends Controller
             'name' => 'required|string|max:255',
             'phone_no' => 'required|string|max:15',
             'address' => 'required|string',
-            'payment_method' => 'required|in:credit_card,paypal,cash_on_delivery',
+            'payment_method' => 'required|in:credit_card,cash_on_delivery',
         ]);
 
         $order = new Order();

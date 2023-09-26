@@ -24,43 +24,19 @@
         <tbody>
             @foreach($cartItems as $item)
             <tr>
-        <td>{{ $item->product->name }}</td> 
-        <td>{{ $item->quantity }}</td>
-        <td>{{ $item->product->price }}</td>
-        <td>{{ $item->quantity * $item->product->price }}</td>
-    </tr>
+                <td>{{ $item->product->name }}</td> 
+                <td>{{ $item->quantity }}</td>
+                <td>{{ $item->product->price }}</td>
+                <td>{{ $item->quantity * $item->product->price }}</td>
+            </tr>
             @endforeach
         </tbody>
     </table>
+
+    <!-- Order Now Button and form -->
+    <form action="order" method="get">
+        @csrf
+        <button type="submit" class="btn btn-order-now">Order Now</button>
+    </form>
 </div>
-
-<!-- <div class="container">
-    <h2>Your Cart</h2>
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Product Name</th>
-                <th>Quantity</th>
-                <th>Price</th>
-                <th>Total</th>
-            </tr>
-        </thead>
-        <tbody>
-            
-            <tr>
-                <td>Taylor Hammer</td> 
-                <td>1</td>
-                <td>Rs 500</td>
-                <td>Rs 500</td>
-            </tr>
-            
-            
-            
-            
-        </tbody>
-    </table>
-</div> -->
-
 @endsection
-
-

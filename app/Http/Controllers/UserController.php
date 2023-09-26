@@ -10,7 +10,7 @@ class UserController extends Controller
     public function index()
     {
         $products = Product::all();
-        return view('user.index', ['products' => $products, 'heading' => 'Home Page']);
+        return view('user.index', ['products' => $products, 'heading' => 'Welcome To Abu Faisal International']);
     }
 
     public function show(Product $product)
