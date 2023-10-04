@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet">
     <link rel="icon" href="https://abfvet.com/items/attimgs/4x3m0v7d6c.png">
     
-    @yield('style');
+    @yield('style')
 </head>
   <body>
     @include('partials.admin-navbar')
