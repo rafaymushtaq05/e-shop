@@ -1,9 +1,9 @@
-@extends('Layout.master') <!-- Extend the master layout -->
+@extends('Layout.master')
 
-@section('title', 'Cart') <!-- Set the page title -->
+@section('title', 'Cart') 
 
 @section('style')
-    <!-- Include your custom styles here -->
+    
     <link href="/styles/nav.css" rel="stylesheet">
     <link href="/styles/banner.css" rel="stylesheet">
     <link href="/styles/cart.css" rel="stylesheet">
@@ -33,7 +33,7 @@
         </tbody>
     </table>
 
-    <!-- Order Now Button and form -->
+    
     <form action="order" method="get">
         @csrf
         <button type="submit" class="btn btn-order-now">Order Now</button>

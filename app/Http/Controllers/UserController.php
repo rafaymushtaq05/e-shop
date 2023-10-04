@@ -15,7 +15,7 @@ class UserController extends Controller
 
     public function show(Product $product)
 {
-    // dd($product);  // Debugging line
+    // dd($product);  
     return view('user.detailProduct', ['product' => $product, 'heading' => 'Product Detail']);
 }
 }

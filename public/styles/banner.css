@@ -1,21 +1,19 @@
-/* Custom styles for the jumbotron */
 .custom-jumbotron {
-    background-color: #f8f9fa; /* Light grey */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    padding: 30px; /* Additional padding for breathing space */
-    transition: transform 0.2s; /* Smooth transition for hover effects */
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    transition: transform 0.2s;
 }
 
 .custom-jumbotron:hover {
-    transform: translateY(-5px); /* Slight upward shift on hover */
+    transform: translateY(-5px);
 }
 
-/* Styles for the quote/heading */
 .quote {
-    font-family: 'Arizonia'; /* Using the custom font you linked earlier */
-    color: #333; /* Dark text color */
-    border-radius: 5px; /* Slight rounding on the corners */
-    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1); /* Shadow to make it pop a bit */
-    text-align: center; /* Centered text */
+    font-family: 'Arizonia';
+    color: #333;
+    border-radius: 5px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }

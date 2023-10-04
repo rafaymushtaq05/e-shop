@@ -1,9 +1,7 @@
-/* Container for more padding */
 .container.mt-5 {
     padding-top: 40px;
 }
 
-/* Styling the product cards */
 .card {
     margin-bottom: 20px;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -11,7 +9,7 @@
 }
 
 .card:hover {
-    transform: scale(1.03); /* Slightly enlarging the card */
+    transform: scale(1.03);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -38,9 +36,8 @@
     margin-bottom: 15px;
 }
 
-/* Styling the edit and delete buttons */
 .btn {
-    margin: 0 5px 10px 0; /* spacing out the buttons */
+    margin: 0 5px 10px 0;
 }
 
 .btn-primary {
@@ -67,7 +64,6 @@
     border-color: #c82333;
 }
 
-/* If you have a flash message section, some basic styles */
 .flashmsg {
     padding: 10px 15px;
     margin-bottom: 20px;

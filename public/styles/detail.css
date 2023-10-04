@@ -1,33 +1,33 @@
 .product-detail {
     padding: 20px;
-    background-color: #f8f9fa; /* Light grey background for a softer look */
+    background-color: #f8f9fa;
     border-radius: 10px;
 }
 
 .product-image {
     width: 100%;
     max-height: auto;
-    object-fit: cover; /* Ensure the image fits without stretching */
-    border-radius: 10px; /* Rounded corners for the image */
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* A subtle shadow for the image */
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
 .product-name {
-    font-size: 2em; /* Larger size for the product name */
-    margin-bottom: 20px; /* Space after the product name */
-    color: #333; /* Dark color for the title */
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
 }
 
 .product-price {
-    font-size: 1.5em; /* Slightly larger text for the price */
-    margin-bottom: 20px; /* Space after the price */
-    color: #007bff; /* Blue color for the price for emphasis */
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #007bff;
 }
 
 .product-description {
-    margin-bottom: 20px; /* Space after the description */
-    font-size: 1.1em; /* Slightly larger font for readability */
-    color: #555; /* Dark grey for the description text */
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    color: #555;
 }
 
 .btn.btn-primary {

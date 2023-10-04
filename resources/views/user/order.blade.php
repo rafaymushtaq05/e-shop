@@ -1,9 +1,9 @@
-@extends('Layout.master') <!-- Extend the master layout -->
+@extends('Layout.master') 
 
-@section('title', 'Order') <!-- Set the page title -->
+@section('title', 'Order') 
 
 @section('style')
-    <!-- Include your custom styles here -->
+    
     <link href="/styles/nav.css" rel="stylesheet">
     <link href="/styles/order.css" rel="stylesheet">
     <link href="/styles/banner.css" rel="stylesheet">

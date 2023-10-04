@@ -3,7 +3,7 @@
 @section('title', 'Admin Dashboard')
 
 @section('style')
-    <!-- Any additional styles you might want to add for this specific page -->
+    
     <link href="/styles/admin-index.css" rel="stylesheet">
     <link href="/styles/flashmsg.css" rel="stylesheet">
     <link href="/styles/nav.css" rel="stylesheet">
@@ -24,7 +24,7 @@
                         <img src="{{ $product['image'] }}" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">{{ $product['name'] }}</h5>
-                            <p class="card-text">${{ $product['price'] }}</p>
+                            <p class="card-text">Rs {{ $product['price'] }}</p>
                             <a href="{{ route('products.edit', $product->id) }}">
                                 <button class="btn btn-primary mr-2">Edit</button>
                             </a>
@@ -39,8 +39,8 @@
                 </div>
                 
                 @if (($index + 1) % 4 == 0 && $index != count($products) - 1)
-                    </div> <!-- End current row -->
-                    <div class="row mt-4"> <!-- Start a new row -->
+                    </div> 
+                    <div class="row mt-4"> 
                 @endif
                 
             @endforeach

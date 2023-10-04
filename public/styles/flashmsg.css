@@ -1,11 +1,9 @@
-/* Padding and margin adjustments for the container */
 .container.mt-3 {
     padding-top: 20px; 
     position: relative; 
     z-index: 1000;
 }
 
-/* General flash message styles */
 .alert {
     padding: 15px 25px;
     border-radius: 5px;
@@ -16,15 +14,14 @@
     opacity: 0.9;
     transition: opacity 0.4s ease-in-out, transform 0.3s ease-in-out;
     position: fixed; 
-    top: 10px; /* maintain a little space from the top */
-    left: 50%; /* position it 50% from the left */
-    transform: translateX(-50%); /* use translate to ensure perfect centering */
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
     width: calc(100% - 40px);
     max-width: 600px;
     z-index: 1050;
 }
 
-/* Specific styles for each flash message type */
 .alert-success {
     background-color: #d4edda; 
     color: #155724; 
@@ -40,8 +37,7 @@
     color: #721c24; 
 }
 
-/* Hover effect for interactivity */
 .alert:hover {
     opacity: 1;
-    transform: translateX(-50%) translateY(-5px); /* adjust the vertical lift while keeping it centered */
+    transform: translateX(-50%) translateY(-5px);
 }
